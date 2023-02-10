@@ -1,0 +1,15 @@
+{
+    "bot":{
+        "token":"",
+        "owner":0,
+        "group":""
+    },
+    "seed":"",
+    "contractAddress":"",
+    "network":{
+        "proxy":"https://gateway.multiversx.com",
+        "indexer":"https://index.multiversx.com",
+        "explorerTransaction":"https://elrondscan.com/transaction/",
+        "explorerAccount":"https://elrondscan.com/account/"
+    }
+}

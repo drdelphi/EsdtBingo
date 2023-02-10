@@ -1,0 +1,6 @@
+#!/bin/bash
+erdpy contract build
+cd ..
+erdpy --verbose contract deploy --project=xbingo --pem="~/walletKey.pem" --gas-limit=100000000 --proxy="https://gateway.multiversx.com" --outfile="xbingo.json" --recall-nonce --send --chain 1
+#--arguments 65 1000000000000000000
+cd xbingo

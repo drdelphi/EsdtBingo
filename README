@@ -1,0 +1,38 @@
+# Esdt Bingo
+
+## Description
+
+This is a Telegram Bingo Bot that interacts with a smart contract on the MultiversX Blockchain.
+
+## Usage
+
+Send the /getid command to @myidbot to retrieve your Telegram ID.
+Note down the **id**.
+
+###### Deploy the Bingo contract
+
+Go to the **xbingo** directory, edit the **deploy** script accordingly and run it.
+It will build and deploy the bingo smart contract.
+Node down the **contract address**.
+
+###### Prerequisites
+
+Create a Telegram bot using @BotFather.
+Node down the **bot's token**.
+
+Create a public Telegram group and add the bot to it.
+Note down the **group's username**.
+
+Generate a wallet on https://wallet.multiversx.com. Add some funds to it (eg. 1 eGLD). This wallet will be used by the bot to call the *extract_numbers* function from the contract after each round.
+Note down the **seed phrase**.
+
+###### Configure the bot
+
+Fill in cmd/esdtBingo/config.json with all the noted down informations.
+
+###### Run
+
+Go to cmd/esdtBingo and build the bot's binary with *go build*
+
+Run the bot and enjoy !
+
