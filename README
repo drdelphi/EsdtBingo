@@ -27,7 +27,7 @@ Call the following functions in the contract in order to customize it according 
 
 ###### Prerequisites
 
-Create a Telegram bot using @BotFather.
+Create a Telegram bot using @BotFather and turn off its Group Privacy.
 Node down the **bot's token**.
 
 Create a public Telegram group and add the bot to it.
