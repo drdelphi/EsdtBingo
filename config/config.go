@@ -31,7 +31,7 @@ func NewConfig(configPath string) (*data.AppConfig, error) {
 }
 
 func Save(cfg *data.AppConfig) error {
-	bytes, err := json.Marshal(cfg)
+	bytes, err := json.MarshalIndent(cfg, "", "  ")
 	if err != nil {
 		return err
 	}
