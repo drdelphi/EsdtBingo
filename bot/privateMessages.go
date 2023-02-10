@@ -46,6 +46,8 @@ func (b *Bot) privateMessageReceived(message *tgbotapi.Message) {
 		))
 		msg := tgbotapi.NewMessage(user.ID, text)
 		msg.ReplyMarkup = keyboard
+		msg.ParseMode = tgbotapi.ModeMarkdown
+		msg.DisableWebPagePreview = true
 		b.tgBot.Send(msg)
 		return
 	case menuBuyTicket:
